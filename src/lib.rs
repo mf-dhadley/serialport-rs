@@ -83,6 +83,7 @@ pub struct Error {
 impl Error {
     /// Instantiates a new error
     pub fn new<T: Into<String>>(kind: ErrorKind, description: T) -> Self {
+        println!("REMOTE CHANGE");
         Error {
             kind,
             description: description.into(),
